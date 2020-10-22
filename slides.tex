@@ -1,0 +1,151 @@
+\documentclass[dvipsnames,aspectratio=169]{beamer}
+
+% dependencies
+\usepackage[T1]{fontenc} % more predictable font encoding
+\usepackage[sfdefault]{ClearSans} % change sans serif font default
+\usepackage[skins]{tcolorbox} % needed for tikz watermark
+\usepackage{tikz}
+\usepackage{watermark}
+
+% beamer setup
+\usetheme{Boadilla}
+\beamertemplatenavigationsymbolsempty % remove page symbols
+
+% custom commands
+\newcommand{\pskp}{\pause\bigskip}
+
+% metadata
+\title{La Roche University}
+\author{Sean Craig, JD MA}
+
+%%%%%%%%%%%
+% content %
+%%%%%%%%%%%
+\begin{document}
+
+% slide 1
+\begin{frame}
+    \begin{tikzpicture}[overlay]
+        \path[fill overzoom image=images/liberty.jpg] (-1,4) rectangle (16,-6);
+        \fill[gray, fill opacity=.5] (2.5,1) rectangle (12.75,-4);
+        \node[draw, fill=gray, opacity=.5] at (13.5, -5.5) {\tiny "NY Statue of Liberty" by Celso Flores};
+    \end{tikzpicture}
+    \begin{center}
+        {\color{white} 
+            {\bf\Large Presidential Debates in a Nutshell}\\[1em]
+            Sean Craig, JD MA \\ 
+            Adjunct Professor
+        }
+    \end{center}
+\end{frame}
+
+% slide 2
+\begin{frame}{Brief History of Presidential Debates}
+    \begin{itemize}
+        \item Direct consequence of advances in mass communication (especially TV) during the mid-twentieth century.
+        \pskp
+        \item 4 debates between Kennedy and Nixon in 1960
+        \pause
+        \begin{itemize}
+            \item Open-seat election that was expected to be close.
+            \item Most TV viewers thought Kennedy won.
+            \item Single most important event in the 1960 campaign according to Nixon biographers.
+        \end{itemize}
+        \pskp
+        \item After 1960, no general-election debates until 1976 (Carter vs. Ford)
+        \begin{itemize}
+            \item Nixon refused to participate again and nothing required him to.
+            \item Regular fixture since 1976.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% slide 3
+\begin{frame}{Things to Know About Modern Debates}
+    \begin{itemize}
+        \item Most debates get between 40--70 million TV viewers (not counting streaming)
+        \pskp
+        \item Since 1987, organized by the Commission on Presidential Debates (CPD), a bipartisan nonprofit
+        \pskp
+        \item Purely voluntary; no legal requirements whatsoever
+        \pskp
+        \item Rules are whatever the candidates will agree to.
+    \end{itemize}
+\end{frame}
+
+% slide 4
+\begin{frame}{Why Are Presidential Debates For?}
+    \begin{itemize}
+        \item {\bf Debate organizers' perspective:} Informing voters about the candidates and where they stand on the issues.
+        \pskp
+        \item {\bf Candidates' perspective:} Persuading undecided voters and energizing existing supporters.
+    \end{itemize}
+\end{frame}
+
+% slide 5
+\begin{frame}{Do Debate Performances Matter for Elections?}
+    \begin{itemize}
+        \item Kennedy vs. Nixon may have influenced the vote choice of 4 million undecided voters (3 million for Kennedy)
+        \pskp
+        \item Michael Dukakis may have lost to George H.W. Bush in 1988 in part because of a debate blunder.
+        \pskp
+        \item These are the exceptions, however.
+        \pskp
+        \item Best to view any debate as a single event in a larger campaign.
+    \end{itemize}
+\end{frame}
+
+% slide 6
+\begin{frame}{Things Social Scientists Think We Know About Presidential Debates}
+    \begin{itemize}
+        \item[1)] Debates are pretty effective at teaching voters about the candidates.
+        \begin{itemize}
+            \item Most learning happens during the first debate you watch.
+            \item Can change the issues that viewers think are important.
+        \end{itemize}
+        \pskp
+        \item[2)] People who watch debates on TV pay more attention to the candidates' personalities.
+        \begin{itemize}
+            \item May be more likely to vote based on personality traits.
+        \end{itemize}
+        \pskp
+        \item[3)] Debate performances are more likely to strengthen existing voting preferences than to change them.
+        \begin{itemize}
+            \item Partisanship is a filter
+            \item Few undecided voters left
+        \end{itemize} 
+    \end{itemize}
+\end{frame}
+
+% slide 7
+\begin{frame}{What's Changed Since the First Trump-Biden Debate?}
+    \begin{itemize}
+        \item CPD announced it will mute microphones to prevent interruptions during initial responses to questions.
+        \pskp
+        \item Supreme Court nominee hearings held, expected to pass.
+        \pskp
+        \item Biden's polling advantage over Trump has increased modestly.
+        \pskp
+        \begin{itemize}
+            \item Biden is +7.7\% in who people plan to vote for according to the latest averages.
+            \item Trump's approval rating has dropped by about a point.
+            \item Numbers have rebounded somewhat for Trump in the past week or so.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% slide 8
+\begin{frame}{Sources}
+    \begin{itemize}
+        \item Benoit, William L., Glenn J. Hansen, and Rebecca M. Verser. 2003. ``A Meta-analysis of the Effects of Viewing U.S. Presidential Debates.'' {\em Communications Monographs} 70(4): 335-350.
+        \item Geer, John. 1988. ``The Effects of Presidential Debates on the Electorate's Preferences for Candidates.'' {\em American Politics Research} 16(4): 486--501.
+        \item Holbrook, Thomas M. 1999. ``Political Learning from Presidential Debates.'' {\em Political Behavior} 21(1): 67-89.
+        \item McKinney, Mitchell S, and Benjamin R. Warner. 2013. ``Do Presidential Debates Matter? Examining a Decade of Campaign Debate Effects.'' {\em Argumentation and Advocacy} 49(4): 238-258.
+        \item Warner, Benjamin R., and Mitchell S. McKinney. 2013. ``To Unite and Divide: The Polarizing Effect of Presidential Debates.'' {\em Communication Studies} 64(5): 508-527.
+    \end{itemize}
+\end{frame}
+
+%%%%%%%
+% end %
+%%%%%%%
+\end{document}
